@@ -56,6 +56,7 @@ public class A2_Driver {
 		medianPriceJob.setReducerClass(MedianPriceReducer.class);
 		if(useCombiner)
 			medianPriceJob.setCombinerClass(MedianPriceCombiner.class);
+		medianPriceJob.setNumReduceTasks(numBins);
 		
 		// configure the output settings
 		medianPriceJob.setOutputKeyClass(Text.class);
