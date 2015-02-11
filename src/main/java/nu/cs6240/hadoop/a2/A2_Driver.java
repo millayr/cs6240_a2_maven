@@ -58,8 +58,8 @@ public class A2_Driver {
 		// set the combiner
 		if(combinerClass.equalsIgnoreCase("MedianPriceCombiner"))
 			medianPriceJob.setCombinerClass(MedianPriceCombiner.class);
-		else if(combinerClass.equalsIgnoreCase("TODO"))
-			medianPriceJob.setCombinerClass(MedianPriceCombiner.class);
+		else if(combinerClass.equalsIgnoreCase("MedianPriceCombiner_v2"))
+			medianPriceJob.setCombinerClass(MedianPriceCombiner_v2.class);
 		
 		// set the number of "bins"
 		medianPriceJob.setNumReduceTasks(numBins);
